@@ -1,0 +1,258 @@
+*, *:before, *:after{
+  box-sizing:border-box;
+}
+@import url('https://fonts.googleapis.com/css?family=Exo+2:600|Josefin+Sans:700|Raleway:900&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background: url("../imgs/bk2.png");
+  
+}
+p{
+  line-height: 1.5;
+  font-size: 2px;
+}
+html,body{
+  height: 100%;
+  font-size: 16px;
+  
+}
+
+h2{
+  font-size: 35px;
+  font-style: initial;
+  font-weight: bolder;
+}
+hr{
+  margin: 10px 10px;
+}
+img{
+  border: solid 2px #9E8881;
+  margin: 10px;
+}
+/*Header Specific Adjustments*/
+
+div.banner a:link {
+    text-decoration: none;
+    color: #D1e8e2;
+  }
+  
+div.banner a:visited {
+    text-decoration: none;
+    color: #D1e8e2;
+  }
+  
+div.banner a:hover {
+    text-decoration: None;
+    font-style: italic;
+    color: #d9b08c;
+  }
+  
+div.banner a:active {
+    text-decoration: none;
+    color: #ffcb9a;
+  }
+.head{
+  background-color:#116466;
+  height: 100px;
+  border-bottom-color:#d9b08c;
+  border-bottom-style: groove;
+  border-bottom-width: 10px;
+}
+.banner{
+  width: 960px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  align-items: center;
+
+}
+
+.banner ul li{
+  display: inline;
+  padding: 10px;
+}
+/* Main Document Adjustments*/
+.container{
+  min-height: 100%;
+  margin-bottom:-120px;
+}
+.main{
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #d1e8e2;
+  border-color: #939790;
+  border-width: 6px;
+  border-style: groove;
+ 
+  }
+
+.content{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  color: #4E5659;
+  font-size: 16px;
+  font-family: 'News Cycle', sans-serif;
+
+}
+.content img{
+  width: 200px;
+  float: left;
+  padding: 10px;
+}
+.meText{
+  padding: 10px;
+  margin: 0px;
+ 
+}
+div.spacer{
+  padding:60px;
+
+}
+/* Foot that will allow for copyright centered and bottom*/
+.footer{
+  background-color: #9E8881;
+  position: relative;
+  height:100px;
+  margin-top: 20px;
+  clear: both;
+  display:flex;
+  justify-content:center;
+  align-items:flex-end;
+  border-top-color:#9E8881;
+  border-top-width: 10px;
+  border-top-style: double;
+}
+
+
+
+ /* This is the Brand Name at the top*/
+div.foo{
+  margin-left: 10px;
+}
+.letter{
+  display: inline-block;
+  font-weight: 900;
+  font-size: 2.5em;
+  margin: 0.00em;
+  position: relative;
+  color: #d9b08c;
+  transform-style: preserve-3d;
+  perspective: 400;
+  z-index: 1;
+}
+
+.letter:before, .letter:after{
+  position:absolute;
+  content: attr(data-letter);
+  transform-origin: top left;
+  top:0;
+  left:0;
+}
+.letter:before{
+  color: #d1e8e2;
+  text-shadow: 
+    -1px 0px 1px rgba(255,255,255,.8),
+    1px 0px 1px rgba(117, 100, 85, 0.336);
+  z-index: 3;
+  transform:
+    rotateX(0deg)
+    rotateY(-15deg)
+    rotateZ(0deg);
+}
+.letter:after{
+  color: rgba(0,0,0,.11);
+  z-index:2;
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(0deg)
+    rotateZ(0deg)
+    skew(0deg,1deg);
+}
+.letter:hover:before{
+  color: #fafafa;
+  transform:
+    rotateX(0deg)
+    rotateY(-40deg)
+    rotateZ(0deg);
+}
+.letter:hover:after{
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(40deg)
+    rotateZ(0deg)
+    skew(0deg,22deg);
+}
+/* This is for the portfolio page to get the Pictures with the text.*/
+div.picbox{
+  margin-left: 7%;
+  margin-right: 5%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.box{
+  width: 250px;
+  position: relative;
+  display: inline-block;
+  padding: 5px;
+  margin: 0px 5px;
+  align-content: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+div.box img{
+  width: 250px;
+  height:200px;
+  margin: 5px;
+  padding:0px;
+}
+
+.text{
+  width: 200px;
+  position: absolute;
+  z-index: 998;
+  margin: 0;
+  left: 25px;
+  right: 0;
+  bottom: 10%;       
+  text-align: center;
+  background: rgba(74, 170, 165, 0.8);
+  color: #fff;
+  font-size: 12px;
+  font-family: 'News Cycle', sans-serif;
+}
+div.text a:link {
+  text-decoration: none;
+  color: #fff;
+}
+
+div.text a:visited {
+  text-decoration: none;
+  color: #eee;
+}
+
+div.text a:hover {
+  text-decoration: None;
+  font-style: italic;
+  color: #d9b08c;
+}
+
+div.text a:active {
+  text-decoration: none;
+  color: #4E5659;
+}
