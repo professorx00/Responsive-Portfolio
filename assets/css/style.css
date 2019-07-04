@@ -63,7 +63,7 @@ div.banner a:active {
   border-bottom-width: 10px;
 }
 .banner{
-  width: 960px;
+  max-width: 960px;
   height: 100px;
   margin-left: auto;
   margin-right: auto;
@@ -81,10 +81,11 @@ div.banner a:active {
 /* Main Document Adjustments*/
 .container{
   min-height: 100%;
+  width:100%;
   margin-bottom:-120px;
 }
 .main{
-  width: 960px;
+  max-width: 960px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
@@ -106,7 +107,7 @@ div.banner a:active {
 
 }
 .content img{
-  width: 200px;
+  max-width: 200px;
   float: left;
   padding: 10px;
 }
@@ -121,6 +122,7 @@ div.spacer{
 }
 /* Foot that will allow for copyright centered and bottom*/
 .footer{
+  width: 100%;
   background-color: #9E8881;
   position: relative;
   height:100px;
@@ -205,7 +207,7 @@ div.picbox{
 }
 
 .box{
-  width: 250px;
+  max-width: 250px;
   position: relative;
   display: inline-block;
   padding: 5px;
@@ -216,14 +218,14 @@ div.picbox{
 }
 
 div.box img{
-  width: 250px;
+  max-width: 250px;
   height:200px;
   margin: 5px;
   padding:0px;
 }
 
 .text{
-  width: 200px;
+  max-width: 200px;
   position: absolute;
   z-index: 998;
   margin: 0;
@@ -256,3 +258,55 @@ div.text a:active {
   text-decoration: none;
   color: #4E5659;
 }
+@media (min-width: 5px){
+  div.banner{
+    flex-direction: column;
+  }
+  div.head{
+    height:120px;
+  }
+  div.main{
+    background: blue;
+  }
+
+   
+  }
+   
+  @media (min-width: 640px) {
+
+    div.banner{
+      flex-direction: column;
+    }
+    div.head{
+      height:120px;
+    }
+   
+    div.main{
+      background: red;
+    }
+   
+  }
+   
+  @media (min-width: 768px) {
+
+    div.banner{
+      flex-direction: row;
+    }
+   
+    div.main{
+      background: lightblue;
+    }
+   
+  }
+   
+  @media (min-width: 960px){
+
+    div.banner{
+      flex-direction: row;
+    }
+   
+    div.main{
+      background: lightgreen;
+    }
+   
+  }
