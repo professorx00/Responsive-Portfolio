@@ -199,8 +199,6 @@ div.foo{
 }
 /* This is for the portfolio page to get the Pictures with the text.*/
 div.picbox{
-  margin-left: 7%;
-  margin-right: 5%;
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 10px;
@@ -265,9 +263,14 @@ div.text a:active {
   div.head{
     height:120px;
   }
-  div.main{
-    background: blue;
+  
+  div.picbox{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    align-content: center;
   }
+ 
 
    
   }
@@ -281,11 +284,11 @@ div.text a:active {
       height:120px;
     }
    
-    div.main{
-      background: red;
-    }
     div.picbox{
-      grid-template: auto auto;
+      display: grid;
+      grid-template-columns: auto auto;
+      padding: 0px;
+      margin: 0px;
     }
    
   }
@@ -296,8 +299,10 @@ div.text a:active {
       flex-direction: row;
     }
    
-    div.main{
-      background: lightblue;
+    div.picbox{
+      display: grid;
+      grid-template-columns: auto auto;
+      padding: 10px;
     }
    
   }
@@ -308,8 +313,9 @@ div.text a:active {
       flex-direction: row;
     }
    
-    div.main{
-      background: lightgreen;
+    div.picbox{
+      display: grid;
+      grid-template-columns: auto auto auto;
+      padding: 10px;
     }
-   
   }
