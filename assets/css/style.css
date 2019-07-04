@@ -284,6 +284,9 @@ div.text a:active {
     div.main{
       background: red;
     }
+    div.picbox{
+      grid-template: auto auto;
+    }
    
   }
    
