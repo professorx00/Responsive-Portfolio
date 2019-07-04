@@ -130,12 +130,14 @@ div.spacer{
   clear: both;
   display:flex;
   justify-content:center;
-  align-items:flex-end;
   border-top-color:#9E8881;
   border-top-width: 10px;
   border-top-style: double;
 }
-
+.footerText{
+  font-size: 24px;
+  font-weight: bolder;
+}
 
 
  /* This is the Brand Name at the top*/
